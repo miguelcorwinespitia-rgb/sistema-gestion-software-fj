@@ -1,0 +1,25 @@
+2026-11-22 23:41:28 | INFO | Cliente registrado: Cliente [CLI-01] Laura Gómez | Email: laura.gomez@empresa.co | Tel: 3001234567 | Activo
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 1 - Cliente válido
+2026-11-22 23:41:28 | INFO | Cliente registrado: Cliente [CLI-02] Carlos Ruiz | Email: carlos.ruiz@correo.com | Tel: 3159876543 | Activo
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 2 - Segundo cliente válido
+2026-11-22 23:41:28 | ERROR | Error controlado en Op 3 - Cliente inválido (email): Correo electrónico inválido: 'correo_sin_arroba'.
+2026-11-22 23:41:28 | ERROR | Error controlado en Op 4 - Cliente duplicado: Ya existe un cliente con ID CLI-01.
+2026-11-22 23:41:28 | INFO | Servicio registrado: Sala [SRV-SAL-1] Sala Auditorio Norte (Cap. 25 pers.) - $80,000.00/h
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 5 - Crear ReservaSala
+2026-11-22 23:41:28 | INFO | Servicio registrado: Equipo [SRV-EQ-1] Servidor Portátil Lab (Serie: SN-99482) - $120,000.00/día
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 6 - Crear AlquilerEquipo
+2026-11-22 23:41:28 | INFO | Servicio registrado: Asesoría [SRV-ASE-1] Arquitectura Cloud (DevOps) - $150,000.00/h
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 7 - Crear Asesoria no disponible
+2026-11-22 23:41:28 | ERROR | Error controlado en Op 8 - Servicio inválido (tarifa <= 0): La tarifa base debe ser un número mayor que cero.
+2026-11-22 23:41:28 | INFO | Intento de procesamiento en reserva RES-001 | Estado actual: PENDIENTE | Total estimado: 257040.0
+2026-11-22 23:41:28 | INFO | Reserva RES-001 CONFIRMADA para el cliente CLI-01.
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 9 - Reserva exitosa de Sala
+2026-11-22 23:41:28 | INFO | Intento de procesamiento en reserva RES-002 | Estado actual: PENDIENTE | Total estimado: 303450.0
+2026-11-22 23:41:28 | INFO | Reserva RES-002 CONFIRMADA para el cliente CLI-02.
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 10 - Reserva exitosa de Equipo
+2026-11-22 23:41:28 | INFO | Intento de procesamiento en reserva RES-003 | Estado actual: PENDIENTE | Total estimado: None
+2026-11-22 23:41:28 | ERROR | Error en reserva RES-003: Fallo al procesar la reserva RES-003. (Causa: El servicio SRV-ASE-1 no está disponible.)
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 11 - Reserva fallida (servicio no disponible)
+2026-11-22 23:41:28 | INFO | Intento de procesamiento en reserva RES-004 | Estado actual: PENDIENTE | Total estimado: None
+2026-11-22 23:41:28 | ERROR | Error en reserva RES-004: Fallo al procesar la reserva RES-004. (Causa: Una sala no puede reservarse por más de 12 horas continuas.)
+2026-11-22 23:41:28 | INFO | Operación exitosa: Op 12 - Reserva fallida (>12h en sala)
